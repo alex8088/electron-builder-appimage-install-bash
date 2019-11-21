@@ -58,9 +58,9 @@ echo "Download icon file..." >> $log
 if [ -e $icon ]; then
    sudo rm -f $icon
 fi
-wget $pkg_url/$icon
+wget $pkg_url/$icon_name
 if [ -e $icon ]; then
-   sudo chmod 744 $app_icon
+   sudo chmod 744 $icon
    echo "Download icon file successful." >> $log
 else
    echo "Download icon file failed." >> $log
